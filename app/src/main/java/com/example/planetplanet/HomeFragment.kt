@@ -12,14 +12,17 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val rootView = binding.root
 
+        val plants = listOf(Plant("Pudge", "Pothos", R.drawable.pothos2),
+            Plant("Brownie", "Cactus", R.drawable.cactus2),
+            Plant("Bean", "Monstera", R.drawable.monstera),
+        )
 
+        val mAdapter = PlantAdapter(plants)
+        binding.recyclerView.adapter = mAdapter
         return rootView
     }
 }

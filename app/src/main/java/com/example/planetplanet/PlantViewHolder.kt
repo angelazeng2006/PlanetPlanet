@@ -16,8 +16,8 @@ class PlantViewHolder (val binding: ListItemLayoutBinding): RecyclerView.ViewHol
     }
     fun bindCourse (plant: Plant){
         currentPlant = plant
-        binding.textViewCourseTitle.text = currentPlant.plantName
-        binding.textViewCourseInstructor.text = currentPlant.plantType
-        binding.imageViewCourseImage.setImageResource(currentPlant.plantImageResourceId)
+        binding.textViewPlantTitle.text = currentPlant.plantName
+        binding.textViewPlantType.text = currentPlant.plantType
+        binding.imageViewPlantImage.setImageResource(currentPlant.plantImageResourceId)
     }
 }

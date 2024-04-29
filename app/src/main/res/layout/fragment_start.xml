@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_send_message"
+    android:id="@+id/fragment_welcome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/darkgreen"
-    tools:context=".HomeFragment">
+    tools:context=".StartFragment">
 
 
     <TextView
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/planetPlanetText"
-        tools:src="@drawable/start_plant" />
+        android:src="@drawable/start_plant" />
 
     <Button
         android:id="@+id/homeButton"

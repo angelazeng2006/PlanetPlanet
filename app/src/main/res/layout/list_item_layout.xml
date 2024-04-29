@@ -4,38 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/darkgreen"
     android:padding="8dp">
 
     <ImageView
-        android:id="@+id/imageViewCourseImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:src="@drawable/ic_launcher_foreground"
+        android:id="@+id/imageViewPlantImage"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/pothos2" />
+    <ImageView
+        android:id="@+id/PlantIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/start_plant" />
 
     <TextView
-        android:id="@+id/textViewCourseTitle"
+        android:id="@+id/textViewPlantTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="8dp"
-        tools:text="Pretend Course Title"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toRightOf="@id/imageViewCourseImage"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:text="Greenie"
+        android:fontFamily="@font/bevan"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@id/imageViewPlantImage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#F4CBB9"
+        />
 
     <TextView
-        android:id="@+id/textViewCourseInstructor"
+        android:id="@+id/textViewPlantType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        tools:text="Pretend Course Instructor"
+        tools:text="Pothos"
+        android:fontFamily="@font/bevan"
+        android:textColor="@color/lightgreen"
+
         android:textSize="18sp"
-        app:layout_constraintLeft_toRightOf="@id/imageViewCourseImage"
-        app:layout_constraintTop_toBottomOf="@id/textViewCourseTitle" />
+        app:layout_constraintLeft_toRightOf="@id/imageViewPlantImage"
+        app:layout_constraintTop_toBottomOf="@id/textViewPlantTitle" />
 
     <TextView
         android:id="@+id/textView"
@@ -44,6 +61,6 @@
         android:layout_marginTop="16dp"
         android:background="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewCourseInstructor" />
+        app:layout_constraintTop_toBottomOf="@id/textViewPlantType" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

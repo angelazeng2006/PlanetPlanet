@@ -5,10 +5,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.planetplanet.databinding.ListItemLayoutBinding
 
-class PlantAdapter(val plantList:List<Plant>): RecyclerView.Adapter<PlantViewHolder>() {
+class PlantAdapter(val plantList:List<Plant>,val viewModel: PlantViewModel): RecyclerView.Adapter<PlantViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlantViewHolder {
         val binding = ListItemLayoutBinding.inflate(LayoutInflater.from(parent.context),parent,false)
-        return PlantViewHolder(binding)
+        return PlantViewHolder(binding, viewModel)
     }
 
     override fun getItemCount(): Int {

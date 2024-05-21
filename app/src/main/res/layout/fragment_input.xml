@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/darkgreen"
+    android:scrollbarThumbHorizontal="@drawable/start_plant"
     tools:context=".InputFragment">
 
     <TextView
@@ -41,23 +42,51 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:backgroundTint="#E1E3C4"
         android:fontFamily="@font/bevan"
-        android:gravity="center"
+        android:scrollbarThumbHorizontal="@drawable/start_plant"
+        android:scrollbarThumbVertical="@drawable/start_plant"
         android:text="Water every ? days:"
         android:textColor="@color/lightgreen"
-        android:textSize="24sp"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/enterNameText" />
 
-    <EditText
+    <SeekBar
         android:id="@+id/waterInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#E1E3C4"
         android:hint="Type..."
+        android:max="50"
         android:textColorHint="#D4D6B8"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/enterWaterTimeText" />
+
+    <TextView
+        android:id="@+id/seekBarNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevan"
+        android:text="0"
+        android:textColor="@color/lightgreen"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/waterInput"
+        app:layout_constraintEnd_toStartOf="@+id/waterInput"
+        app:layout_constraintTop_toTopOf="@+id/waterInput" />
+
+    <TextView
+        android:id="@+id/seekBarNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevan"
+        android:text="50"
+        android:textColor="@color/lightgreen"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/waterInput"
+        app:layout_constraintStart_toEndOf="@+id/waterInput"
         app:layout_constraintTop_toBottomOf="@+id/enterWaterTimeText" />
 
     <TextView
@@ -95,19 +124,19 @@
         android:layout_height="143dp"
         android:layout_marginStart="10dp"
         android:shadowColor="#954040"
+        android:src="@drawable/start_plant"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/start_plant" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/plantImage2"
         android:layout_width="128dp"
         android:layout_height="143dp"
         android:shadowColor="#954040"
+        android:src="@drawable/start_plant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/plantImage3"
-        app:layout_constraintStart_toEndOf="@+id/plantImage1"
-        android:src="@drawable/start_plant" />
+        app:layout_constraintStart_toEndOf="@+id/plantImage1" />
 
     <ImageView
         android:id="@+id/plantImage3"
@@ -115,9 +144,9 @@
         android:layout_height="143dp"
         android:layout_marginEnd="10dp"
         android:shadowColor="#954040"
+        android:src="@drawable/start_plant"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/start_plant" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/nextButton"
@@ -147,5 +176,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="359dp" />
+
+    <!--    <SeekBar-->
+    <!--        android:id="@+id/seekBar"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        tools:layout_editor_absoluteX="153dp"-->
+    <!--        tools:layout_editor_absoluteY="347dp"-->
+    <!--        android:textColorHint="#D4D6B8"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline2"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/enterWaterTimeText"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

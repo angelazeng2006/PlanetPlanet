@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_add_plant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgreen"
+    tools:context=".HomeFragment">
+
+
+    <TextView
+        android:id="@+id/chooseTypeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bevan"
+        android:gravity="center"
+        android:text="Choose the type!"
+        android:textColor="@color/lightgreen"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="26dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="386dp" />
+
+    <ImageButton
+        android:id="@+id/aloeVeraButton"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aloe_vera"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTypeText" />
+
+    <TextView
+        android:id="@+id/aloeVeraText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevan"
+        android:gravity="center"
+        android:text="Aloe Vera"
+        android:textColor="@color/lightgreen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/aloeVeraButton"
+        app:layout_constraintStart_toStartOf="@+id/aloeVeraButton"
+        app:layout_constraintTop_toBottomOf="@+id/aloeVeraButton" />
+
+    <ImageButton
+        android:id="@+id/cactusButton"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cactus2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTypeText" />
+
+    <TextView
+        android:id="@+id/cactusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevan"
+        android:gravity="center"
+        android:text="Cactus"
+        android:textColor="@color/lightgreen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/cactusButton"
+        app:layout_constraintStart_toStartOf="@+id/cactusButton"
+        app:layout_constraintTop_toBottomOf="@+id/cactusButton" />
+
+    <ImageButton
+        android:id="@+id/peaceLilyButton"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/peace_lily"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/aloeVeraText" />
+
+    <TextView
+        android:id="@+id/peaceLilyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevan"
+        android:gravity="center"
+        android:text="Peace Lily"
+        android:textColor="@color/lightgreen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/peaceLilyButton"
+        app:layout_constraintStart_toStartOf="@+id/peaceLilyButton"
+        app:layout_constraintTop_toBottomOf="@+id/peaceLilyButton" />
+
+    <ImageButton
+        android:id="@+id/pothosButton"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pothos2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/cactusText" />
+
+    <TextView
+        android:id="@+id/pothosText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevan"
+        android:gravity="center"
+        android:text="Pothos"
+        android:textColor="@color/lightgreen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/pothosButton"
+        app:layout_constraintStart_toStartOf="@+id/pothosButton"
+        app:layout_constraintTop_toBottomOf="@+id/pothosButton" />
+
+    <ImageButton
+        android:id="@+id/snakeButton"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/snake_plant"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/peaceLilyText" />
+
+    <TextView
+        android:id="@+id/snakeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevan"
+        android:gravity="center"
+        android:text="Snake Plant"
+        android:textColor="@color/lightgreen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/snakeButton"
+        app:layout_constraintStart_toStartOf="@+id/snakeButton"
+        app:layout_constraintTop_toBottomOf="@+id/snakeButton" />
+
+    <ImageButton
+        android:id="@+id/monsteraButton"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/monstera"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/pothosText" />
+
+    <TextView
+        android:id="@+id/monsteraText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevan"
+        android:gravity="center"
+        android:text="Monstera"
+        android:textColor="@color/lightgreen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/monsteraButton"
+        app:layout_constraintStart_toStartOf="@+id/monsteraButton"
+        app:layout_constraintTop_toBottomOf="@+id/monsteraButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
